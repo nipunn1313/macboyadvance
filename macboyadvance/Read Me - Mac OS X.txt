@@ -1,4 +1,0 @@
-In order to compile on Mac OS X:
-Add all the files in the Mac source folder to the main source tree (preserving the directory structure) and open the XCode project.  This also requires the SDL framework to be installed.  Get it from http://www.libsdl.org
-
-I am not going to provide direct support for the sources but if you have questions you can e-mail me at adam@victoly.com.
