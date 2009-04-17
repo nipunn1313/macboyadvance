@@ -1,0 +1,124 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {openCheatCBA = id; openCheatGSA = id; readCheatCBA = id; readCheatGSA = id; }; 
+            CLASS = CheatClass; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                cheatField = NSTextField; 
+                cheatField2 = NSTextField; 
+                cheatField3 = NSTextField; 
+                cheatField4 = NSTextField; 
+                cheatField5 = NSTextField; 
+                cheatField6 = NSTextField; 
+                cheatFieldGSA = NSTextField; 
+                cheatFieldGSA2 = NSTextField; 
+                cheatFieldGSA3 = NSTextField; 
+                cheatFieldGSA4 = NSTextField; 
+                cheatFieldGSA5 = NSTextField; 
+                cheatFieldGSA6 = NSTextField; 
+                cheatMenu = NSMenu; 
+                cheatMenuCBA = NSMenuItem; 
+                cheatMenuGSA = NSMenuItem; 
+                cheatWindow = NSWindow; 
+                cheatWindowGSA = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                beginConfig = id; 
+                calibrate = id; 
+                closePrefsNull = id; 
+                defaultKeys = id; 
+                endConfig = id; 
+                pollA = id; 
+                pollB = id; 
+                pollCapture = id; 
+                pollDown = id; 
+                pollL = id; 
+                pollLeft = id; 
+                pollR = id; 
+                pollRight = id; 
+                pollSelect = id; 
+                pollSpeed = id; 
+                pollStart = id; 
+                pollUp = id; 
+            }; 
+            CLASS = ConfigClass; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                CancelButton = NSButton; 
+                OKButton = NSButton; 
+                aField = NSTextField; 
+                bField = NSTextField; 
+                calibrateButton = NSButton; 
+                captureField = NSTextField; 
+                configWindow = NSWindow; 
+                defaultButton = NSButton; 
+                downField = NSTextField; 
+                lField = NSTextField; 
+                leftField = NSTextField; 
+                rField = NSTextField; 
+                rightField = NSTextField; 
+                selectField = NSTextField; 
+                speedField = NSTextField; 
+                startField = NSTextField; 
+                upField = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                closeRom = id; 
+                defrostState = id; 
+                freezeState = id; 
+                pauseEmulation = id; 
+                resetEmulation = id; 
+            }; 
+            CLASS = MenuClass; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                closePrefs = id; 
+                closePrefsNull = id; 
+                defaultPrefs = id; 
+                donate = id; 
+                openCheatCBA = id; 
+                openCheatGSA = id; 
+                openHomepage = id; 
+                openPrefs = id; 
+                openRomFromMenu = id; 
+                quit = id; 
+            }; 
+            CLASS = SDLMain; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                changeFileType = id; 
+                frameskip = NSPopUpButton; 
+                interframe = id; 
+                pauseWhenInactive = id; 
+                prefsWindow = NSWindow; 
+                realtimeClock = id; 
+                showSpeed = id; 
+                skipBios = id; 
+                soundEcho = id; 
+                soundLowPass = id; 
+                soundOn = id; 
+                soundQuality = NSPopUpButton; 
+                soundReverseStereo = id; 
+                throttle = id; 
+                useBios = id; 
+                videoBorder = id; 
+                videoFilter = NSPopUpButton; 
+                videoFullscreen = id; 
+                videoSize = NSPopUpButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,1907 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		080E96DDFE201D6D7F000001 = {
+			children = (
+				F5F08B47038DDA2D019E6289,
+				F54576310381E28D019FB90B,
+				A58BC95D0420353900BFF2FE,
+				A5A9964C04212DA100BFF2FE,
+				F54576300381E28D019FB90B,
+				F54576320381E28D019FB90B,
+			);
+			isa = PBXGroup;
+			name = Classes;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//080
+//081
+//082
+//083
+//084
+//100
+//101
+//102
+//103
+//104
+		1058C7A0FEA54F0111CA2CBB = {
+			children = (
+				A56D9C2404CF339F00A80002,
+				1058C7A1FEA54F0111CA2CBB,
+			);
+			isa = PBXGroup;
+			name = "Linked Frameworks";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		1058C7A1FEA54F0111CA2CBB = {
+			fallbackIsa = PBXFileReference;
+			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
+			name = Cocoa.framework;
+			path = /System/Library/Frameworks/Cocoa.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		1058C7A3FEA54F0111CA2CBB = {
+			fileRef = 1058C7A1FEA54F0111CA2CBB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//100
+//101
+//102
+//103
+//104
+//170
+//171
+//172
+//173
+//174
+		17587328FF379C6511CA2CBB = {
+			explicitFileType = wrapper.application;
+			fallbackIsa = PBXFileReference;
+			isa = PBXApplicationReference;
+			path = VisualBoyAdvance.app;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+//170
+//171
+//172
+//173
+//174
+//190
+//191
+//192
+//193
+//194
+		19C28FACFE9D520D11CA2CBB = {
+			children = (
+				17587328FF379C6511CA2CBB,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//190
+//191
+//192
+//193
+//194
+//290
+//291
+//292
+//293
+//294
+		29B97313FDCFA39411CA2CEA = {
+			buildSettings = {
+			};
+			buildStyles = (
+				4A9504CCFFE6A4B311CA0CBA,
+				4A9504CDFFE6A4B311CA0CBA,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = 29B97314FDCFA39411CA2CEA;
+			projectDirPath = "";
+			targets = (
+				29B97326FDCFA39411CA2CEA,
+			);
+		};
+		29B97314FDCFA39411CA2CEA = {
+			children = (
+				080E96DDFE201D6D7F000001,
+				F5DE472E0381A753019FB90B,
+				F5DE47D00381ABEC019FB90B,
+				29B97317FDCFA39411CA2CEA,
+				29B97323FDCFA39411CA2CEA,
+				19C28FACFE9D520D11CA2CBB,
+			);
+			isa = PBXGroup;
+			name = VisualBoyAdvance;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA = {
+			children = (
+				A59B207604966ADE00BFF2FE,
+				A5BC481503D9DA31009EC4A4,
+				F54576430381E2AA019FB90B,
+			);
+			isa = PBXGroup;
+			name = Resources;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA = {
+			children = (
+				1058C7A0FEA54F0111CA2CBB,
+			);
+			isa = PBXGroup;
+			name = Frameworks;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		29B97326FDCFA39411CA2CEA = {
+			buildPhases = (
+				29B97327FDCFA39411CA2CEA,
+				29B97328FDCFA39411CA2CEA,
+				29B9732BFDCFA39411CA2CEA,
+				29B9732DFDCFA39411CA2CEA,
+				A56D9C2704CF33A700A80002,
+			);
+			buildSettings = {
+				CC = "/usr/bin/gcc-3.3";
+				CPLUSPLUS = "/usr/bin/g++-3.3";
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(HOME)/Library/Frameworks\" /Users/g3/Library/Frameworks";
+				GCC_VERSION = 3.3;
+				HEADER_SEARCH_PATHS = "../win32/include ../src \"$(HOME)/Library/Frameworks/SDL.framework/Headers\"";
+				INSTALL_PATH = "$(HOME)/Applications";
+				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
+				LIBRARY_SEARCH_PATHS = ../macosx;
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "-Wno-unused -fomit-frame-pointer -ffast-math -malign-natural -fstrict-aliasing -fsched-interblock -DFINAL_VERSION=1 -DC_CORE=1 -DSTDC_HEADERS=1 -DHAVE_UNISTD_H=1 -DHAVE_ARPA_INET_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DWORDS_BIGENDIAN=1 -DSDL";
+				OTHER_LDFLAGS = "-framework SDL -lz";
+				PRODUCT_NAME = VisualBoyAdvance;
+				SECTORDER_FLAGS = "";
+				USE_GCC3_PFE_SUPPORT = NO;
+				WARNING_CFLAGS = "-Wall -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			isa = PBXApplicationTarget;
+			name = "Visual Boy Advance";
+			productInstallPath = "$(HOME)/Applications";
+			productName = VisualBoyAdvance;
+			productReference = 17587328FF379C6511CA2CBB;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>gba</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>cart.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>GameBoy Advance Cartridge</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>Cart</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>gb</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>cart.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>GameBoy Cartridge</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>Cart</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>sgm</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>savestate.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>VisualBoyAdvance Saved State</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>sgmf</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>sav</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>savestate.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>VisualBoyAdvance Battery Save</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>savf</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>VisualBoyAdvance</string>
+	<key>CFBundleGetInfoString</key>
+	<string>VisualBoyAdvance 1.7.4, Copyright 2003.</string>
+	<key>CFBundleIconFile</key>
+	<string>system.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.emuscene.VisualBoyAdvance</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>VisualBoyAdvance</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.7.4</string>
+	<key>CFBundleSignature</key>
+	<string>vboy</string>
+	<key>CFBundleVersion</key>
+	<string>1.7.4</string>
+	<key>NSMainNibFile</key>
+	<string>Main.nib</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+		};
+		29B97327FDCFA39411CA2CEA = {
+			buildActionMask = 2147483647;
+			files = (
+				F54576350381E28D019FB90B,
+				F54576360381E28D019FB90B,
+				F54576960381E32C019FB90B,
+				F54576970381E32C019FB90B,
+				F54576980381E32C019FB90B,
+				F54576990381E32C019FB90B,
+				F545769A0381E32C019FB90B,
+				F545769B0381E32C019FB90B,
+				F545769C0381E32C019FB90B,
+				F545769D0381E32C019FB90B,
+				F54576A00381E32C019FB90B,
+				F54576A10381E32C019FB90B,
+				F54576A30381E32C019FB90B,
+				F54576A50381E32C019FB90B,
+				F54576A60381E32C019FB90B,
+				F54576A70381E32C019FB90B,
+				F54576AA0381E32C019FB90B,
+				F54576AB0381E32C019FB90B,
+				A5A9964D04212DA100BFF2FE,
+				A5A221BB0492372C00BFF2FE,
+				A5A221BC0492372C00BFF2FE,
+				A51C7E3A04CF12E200A80002,
+				A51C7E4404CF15C200A80002,
+				A51C7E4504CF15C200A80002,
+				A51C7E4604CF15C200A80002,
+				A51C7E4704CF15C200A80002,
+				A51C7E4804CF15C200A80002,
+				A51C7E4904CF15C200A80002,
+				A51C7E4A04CF15C200A80002,
+				A51C7E4B04CF15C200A80002,
+				A5726D4C056EBC2E005B4801,
+				A5917F5B05BCCF930069B24B,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B97328FDCFA39411CA2CEA = {
+			buildActionMask = 2147483647;
+			files = (
+				F54576470381E2B6019FB90B,
+				F54576480381E2B6019FB90B,
+				F54576490381E2B6019FB90B,
+				A59B207804966ADE00BFF2FE,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B9732BFDCFA39411CA2CEA = {
+			buildActionMask = 2147483647;
+			files = (
+				F54576340381E28D019FB90B,
+				F54576660381E2F4019FB90B,
+				F54576670381E2F4019FB90B,
+				F54576690381E2F4019FB90B,
+				F545766C0381E2F4019FB90B,
+				F545766D0381E2F4019FB90B,
+				F545766F0381E2F4019FB90B,
+				F54576710381E2F4019FB90B,
+				F54576720381E2F4019FB90B,
+				F54576730381E2F4019FB90B,
+				F54576740381E2F4019FB90B,
+				F54576760381E2F4019FB90B,
+				F54576770381E2F4019FB90B,
+				F54576790381E2F4019FB90B,
+				F545767A0381E2F4019FB90B,
+				F545767C0381E2F4019FB90B,
+				F545767D0381E2F4019FB90B,
+				F545767E0381E2F4019FB90B,
+				F545767F0381E2F4019FB90B,
+				F54576B40381E347019FB90B,
+				F54576B50381E347019FB90B,
+				F54576B60381E347019FB90B,
+				F54576B70381E347019FB90B,
+				F54576B80381E347019FB90B,
+				F54576B90381E347019FB90B,
+				F54576BA0381E347019FB90B,
+				F54576BB0381E347019FB90B,
+				F512305103830368019FB90B,
+				F512305303830368019FB90B,
+				F512305403830368019FB90B,
+				F5F08B48038DDA2D019E6289,
+				F53A4F7B03A3DD1D019E6289,
+				A5936EEB03C63D9C009E6289,
+				A58BC95E0420353900BFF2FE,
+				A54859800444CDCF00BFF2FE,
+				A5E1AEDF045054C700BFF2FE,
+				A51C7E3704CF12C200A80002,
+				A51C7E5904CF1AE500A80002,
+				A50E0CAF04E32B5400A80002,
+				A5726D4A056EBC27005B4801,
+				A5726D52056EBC7A005B4801,
+				A5630D780594F35E0087F66E,
+				A5917F5605BCCF8A0069B24B,
+				A5C7525705BDE4CF00EEE9DE,
+				A5C7526505BDE56700EEE9DE,
+				A5C7526605BDE56700EEE9DE,
+				A5C7526705BDE56700EEE9DE,
+				A5C7527805BDE7AE00EEE9DE,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B9732DFDCFA39411CA2CEA = {
+			buildActionMask = 2147483647;
+			files = (
+				1058C7A3FEA54F0111CA2CBB,
+				A5BC481603D9DA31009EC4A4,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+//290
+//291
+//292
+//293
+//294
+//4A0
+//4A1
+//4A2
+//4A3
+//4A4
+		4A9504CCFFE6A4B311CA0CBA = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				ZERO_LINK = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		4A9504CDFFE6A4B311CA0CBA = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				ZERO_LINK = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+//4A0
+//4A1
+//4A2
+//4A3
+//4A4
+//A50
+//A51
+//A52
+//A53
+//A54
+		A50E0CAF04E32B5400A80002 = {
+			fileRef = F57080EF0381E872019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A51C7E3604CF12C200A80002 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = memgzio.c;
+			path = ../src/memgzio.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A51C7E3704CF12C200A80002 = {
+			fileRef = A51C7E3604CF12C200A80002;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A51C7E3904CF12E200A80002 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = memgzio.h;
+			path = ../src/memgzio.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A51C7E3A04CF12E200A80002 = {
+			fileRef = A51C7E3904CF12E200A80002;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A51C7E3C04CF15C200A80002 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = GB.h;
+			path = ../src/gb/GB.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A51C7E3D04CF15C200A80002 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = gbCheats.h;
+			path = ../src/gb/gbCheats.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A51C7E3E04CF15C200A80002 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = gbSGB.h;
+			path = ../src/gb/gbSGB.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A51C7E3F04CF15C200A80002 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = gbSound.h;
+			path = ../src/gb/gbSound.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A51C7E4004CF15C200A80002 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = gbPrinter.h;
+			path = ../src/gb/gbPrinter.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A51C7E4104CF15C200A80002 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = gbCodes.h;
+			path = ../src/gb/gbCodes.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A51C7E4204CF15C200A80002 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = gbGlobals.h;
+			path = ../src/gb/gbGlobals.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A51C7E4304CF15C200A80002 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = gbMemory.h;
+			path = ../src/gb/gbMemory.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A51C7E4404CF15C200A80002 = {
+			fileRef = A51C7E3C04CF15C200A80002;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A51C7E4504CF15C200A80002 = {
+			fileRef = A51C7E3D04CF15C200A80002;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A51C7E4604CF15C200A80002 = {
+			fileRef = A51C7E3E04CF15C200A80002;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A51C7E4704CF15C200A80002 = {
+			fileRef = A51C7E3F04CF15C200A80002;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A51C7E4804CF15C200A80002 = {
+			fileRef = A51C7E4004CF15C200A80002;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A51C7E4904CF15C200A80002 = {
+			fileRef = A51C7E4104CF15C200A80002;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A51C7E4A04CF15C200A80002 = {
+			fileRef = A51C7E4204CF15C200A80002;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A51C7E4B04CF15C200A80002 = {
+			fileRef = A51C7E4304CF15C200A80002;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A51C7E5804CF1AE500A80002 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = interframe.cpp;
+			path = ../src/interframe.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A51C7E5904CF1AE500A80002 = {
+			fileRef = A51C7E5804CF1AE500A80002;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A530394E0593581B00DE489D = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			name = Japanese;
+			path = Japanese.lproj/Main.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A541A3D60419465300BFF2FE = {
+			children = (
+				F54576AC0381E347019FB90B,
+				F54576AD0381E347019FB90B,
+				F54576AE0381E347019FB90B,
+				F54576AF0381E347019FB90B,
+				F54576B00381E347019FB90B,
+				F54576B10381E347019FB90B,
+				F54576B20381E347019FB90B,
+				F54576B30381E347019FB90B,
+			);
+			isa = PBXGroup;
+			name = GB;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A541A3D70419466400BFF2FE = {
+			children = (
+				A5726D51056EBC7A005B4801,
+				A51C7E5804CF1AE500A80002,
+				A5936EEA03C63D9C009E6289,
+				F512304D03830368019FB90B,
+				F53A4F7A03A3DD1D019E6289,
+				F512304F03830368019FB90B,
+				F512305003830368019FB90B,
+				F54576540381E2F4019FB90B,
+				A5E1AEDE045054C700BFF2FE,
+			);
+			isa = PBXGroup;
+			name = "Video Filters";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A541A3D8041946DF00BFF2FE = {
+			children = (
+				A51C7E3C04CF15C200A80002,
+				A51C7E3D04CF15C200A80002,
+				A51C7E3E04CF15C200A80002,
+				A51C7E3F04CF15C200A80002,
+				A51C7E4004CF15C200A80002,
+				A51C7E4104CF15C200A80002,
+				A51C7E4204CF15C200A80002,
+				A51C7E4304CF15C200A80002,
+			);
+			isa = PBXGroup;
+			name = GB;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A548597F0444CDCF00BFF2FE = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = RTC.cpp;
+			path = ../src/RTC.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A54859800444CDCF00BFF2FE = {
+			fileRef = A548597F0444CDCF00BFF2FE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A54859820444CDD500BFF2FE = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = agbprint.cpp;
+			path = ../src/agbprint.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A5630D780594F35E0087F66E = {
+			fileRef = A54859820444CDD500BFF2FE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A56D9C2404CF339F00A80002 = {
+			fallbackIsa = PBXFileReference;
+			isa = PBXFrameworkReference;
+			lastKnownFileType = wrapper.framework;
+			name = SDL.framework;
+			path = /Users/g3/Library/Frameworks/SDL.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		A56D9C2504CF339F00A80002 = {
+			fileRef = A56D9C2404CF339F00A80002;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A56D9C2704CF33A700A80002 = {
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A56D9C2504CF339F00A80002,
+			);
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5726D49056EBC27005B4801 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Text.cpp;
+			path = ../src/Text.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A5726D4A056EBC27005B4801 = {
+			fileRef = A5726D49056EBC27005B4801;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5726D4B056EBC2E005B4801 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Text.h;
+			path = ../src/Text.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A5726D4C056EBC2E005B4801 = {
+			fileRef = A5726D4B056EBC2E005B4801;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5726D51056EBC7A005B4801 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = hq2x.cpp;
+			path = ../src/hq2x.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A5726D52056EBC7A005B4801 = {
+			fileRef = A5726D51056EBC7A005B4801;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A58BC95D0420353900BFF2FE = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = KeyConfig.mm;
+			path = ../src/macosx/KeyConfig.mm;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A58BC95E0420353900BFF2FE = {
+			fileRef = A58BC95D0420353900BFF2FE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5917F5505BCCF8A0069B24B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = elf.cpp;
+			path = "/Users/g3/VisualBoyAdvance Source/VisualBoyAdvance-1.7src-MacOSX/src/elf.cpp";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		A5917F5605BCCF8A0069B24B = {
+			fileRef = A5917F5505BCCF8A0069B24B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5917F5A05BCCF930069B24B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = elf.h;
+			path = "/Users/g3/VisualBoyAdvance Source/VisualBoyAdvance-1.7src-MacOSX/src/elf.h";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		A5917F5B05BCCF930069B24B = {
+			fileRef = A5917F5A05BCCF930069B24B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5936EEA03C63D9C009E6289 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = bilinear.cpp;
+			path = ../src/bilinear.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A5936EEB03C63D9C009E6289 = {
+			fileRef = A5936EEA03C63D9C009E6289;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A59B207604966ADE00BFF2FE = {
+			children = (
+				A59B207704966ADE00BFF2FE,
+				A530394E0593581B00DE489D,
+			);
+			isa = PBXVariantGroup;
+			name = Main.nib;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A59B207704966ADE00BFF2FE = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			name = English;
+			path = English.lproj/Main.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A59B207804966ADE00BFF2FE = {
+			fileRef = A59B207604966ADE00BFF2FE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5A221B90492372C00BFF2FE = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = "arm-new.h";
+			path = "../src/arm-new.h";
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A5A221BA0492372C00BFF2FE = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = thumb.h;
+			path = ../src/thumb.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A5A221BB0492372C00BFF2FE = {
+			fileRef = A5A221B90492372C00BFF2FE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5A221BC0492372C00BFF2FE = {
+			fileRef = A5A221BA0492372C00BFF2FE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5A9964C04212DA100BFF2FE = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = KeyConfig.h;
+			path = ../src/macosx/KeyConfig.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A5A9964D04212DA100BFF2FE = {
+			fileRef = A5A9964C04212DA100BFF2FE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5BC481503D9DA31009EC4A4 = {
+			isa = PBXFileReference;
+			lastKnownFileType = archive.ar;
+			path = libpng.a;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A5BC481603D9DA31009EC4A4 = {
+			fileRef = A5BC481503D9DA31009EC4A4;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5C7525605BDE4CF00EEE9DE = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = debugger.cpp;
+			path = "/Users/g3/VisualBoyAdvance Source/VisualBoyAdvance-1.7src-MacOSX/src/debugger.cpp";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		A5C7525705BDE4CF00EEE9DE = {
+			fileRef = A5C7525605BDE4CF00EEE9DE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5C7526205BDE56700EEE9DE = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = exprNode.cpp;
+			path = "/Users/g3/VisualBoyAdvance Source/VisualBoyAdvance-1.7src-MacOSX/src/exprNode.cpp";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		A5C7526305BDE56700EEE9DE = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "expr-lex.cpp";
+			path = "/Users/g3/VisualBoyAdvance Source/VisualBoyAdvance-1.7src-MacOSX/src/expr-lex.cpp";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		A5C7526405BDE56700EEE9DE = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = expr.cpp;
+			path = "/Users/g3/VisualBoyAdvance Source/VisualBoyAdvance-1.7src-MacOSX/src/expr.cpp";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		A5C7526505BDE56700EEE9DE = {
+			fileRef = A5C7526205BDE56700EEE9DE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5C7526605BDE56700EEE9DE = {
+			fileRef = A5C7526305BDE56700EEE9DE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5C7526705BDE56700EEE9DE = {
+			fileRef = A5C7526405BDE56700EEE9DE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5C7527705BDE7AE00EEE9DE = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = armdis.cpp;
+			path = "/Users/g3/VisualBoyAdvance Source/VisualBoyAdvance-1.7src-MacOSX/src/armdis.cpp";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		A5C7527805BDE7AE00EEE9DE = {
+			fileRef = A5C7527705BDE7AE00EEE9DE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A5E1AEDE045054C700BFF2FE = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = scanline.cpp;
+			path = ../src/scanline.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		A5E1AEDF045054C700BFF2FE = {
+			fileRef = A5E1AEDE045054C700BFF2FE;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//A50
+//A51
+//A52
+//A53
+//A54
+//F50
+//F51
+//F52
+//F53
+//F54
+		F512304D03830368019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = motionblur.cpp;
+			path = ../src/motionblur.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F512304F03830368019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = simple2x.cpp;
+			path = ../src/simple2x.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F512305003830368019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = pixel.cpp;
+			path = ../src/pixel.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F512305103830368019FB90B = {
+			fileRef = F512304D03830368019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F512305303830368019FB90B = {
+			fileRef = F512304F03830368019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F512305403830368019FB90B = {
+			fileRef = F512305003830368019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F53A4F7A03A3DD1D019E6289 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = 2xSaI.cpp;
+			path = ../src/2xSaI.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F53A4F7B03A3DD1D019E6289 = {
+			fileRef = F53A4F7A03A3DD1D019E6289;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576300381E28D019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = openfile.mm;
+			path = ../src/macosx/openfile.mm;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576310381E28D019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = MainClass.h;
+			path = ../src/macosx/MainClass.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576320381E28D019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = openfile.h;
+			path = ../src/macosx/openfile.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576340381E28D019FB90B = {
+			fileRef = F54576300381E28D019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576350381E28D019FB90B = {
+			fileRef = F54576310381E28D019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576360381E28D019FB90B = {
+			fileRef = F54576320381E28D019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576430381E2AA019FB90B = {
+			children = (
+				F54576440381E2B6019FB90B,
+				F54576450381E2B6019FB90B,
+				F54576460381E2B6019FB90B,
+			);
+			isa = PBXGroup;
+			name = Icons;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F54576440381E2B6019FB90B = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			name = savestate.icns;
+			path = ../src/macosx/savestate.icns;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576450381E2B6019FB90B = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			name = system.icns;
+			path = ../src/macosx/system.icns;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576460381E2B6019FB90B = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			name = cart.icns;
+			path = ../src/macosx/cart.icns;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576470381E2B6019FB90B = {
+			fileRef = F54576440381E2B6019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576480381E2B6019FB90B = {
+			fileRef = F54576450381E2B6019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576490381E2B6019FB90B = {
+			fileRef = F54576460381E2B6019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F545764B0381E2F3019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Flash.cpp;
+			path = ../src/Flash.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F545764C0381E2F3019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Mode5.cpp;
+			path = ../src/Mode5.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F545764E0381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Globals.cpp;
+			path = ../src/Globals.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576510381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Mode3.cpp;
+			path = ../src/Mode3.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576520381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Sound.cpp;
+			path = ../src/Sound.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576540381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = admame.cpp;
+			path = ../src/admame.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576560381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Mode1.cpp;
+			path = ../src/Mode1.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576570381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Mode0.cpp;
+			path = ../src/Mode0.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576580381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Mode2.cpp;
+			path = ../src/Mode2.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576590381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Gfx.cpp;
+			path = ../src/Gfx.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F545765B0381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = EEprom.cpp;
+			path = ../src/EEprom.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F545765C0381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Cheats.cpp;
+			path = ../src/Cheats.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F545765E0381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = unzip.cpp;
+			path = ../src/unzip.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F545765F0381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Sram.cpp;
+			path = ../src/Sram.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576610381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = GBA.cpp;
+			path = ../src/GBA.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576620381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Util.cpp;
+			path = ../src/Util.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576630381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = bios.cpp;
+			path = ../src/bios.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576640381E2F4019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Mode4.cpp;
+			path = ../src/Mode4.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576660381E2F4019FB90B = {
+			fileRef = F545764B0381E2F3019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576670381E2F4019FB90B = {
+			fileRef = F545764C0381E2F3019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576690381E2F4019FB90B = {
+			fileRef = F545764E0381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F545766C0381E2F4019FB90B = {
+			fileRef = F54576510381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F545766D0381E2F4019FB90B = {
+			fileRef = F54576520381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F545766F0381E2F4019FB90B = {
+			fileRef = F54576540381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576710381E2F4019FB90B = {
+			fileRef = F54576560381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576720381E2F4019FB90B = {
+			fileRef = F54576570381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576730381E2F4019FB90B = {
+			fileRef = F54576580381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576740381E2F4019FB90B = {
+			fileRef = F54576590381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576760381E2F4019FB90B = {
+			fileRef = F545765B0381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576770381E2F4019FB90B = {
+			fileRef = F545765C0381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576790381E2F4019FB90B = {
+			fileRef = F545765E0381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F545767A0381E2F4019FB90B = {
+			fileRef = F545765F0381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F545767C0381E2F4019FB90B = {
+			fileRef = F54576610381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F545767D0381E2F4019FB90B = {
+			fileRef = F54576620381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F545767E0381E2F4019FB90B = {
+			fileRef = F54576630381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F545767F0381E2F4019FB90B = {
+			fileRef = F54576640381E2F4019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576800381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = unzip.h;
+			path = ../src/unzip.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576810381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Cheats.h;
+			path = ../src/Cheats.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576820381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Flash.h;
+			path = ../src/Flash.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576830381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Sram.h;
+			path = ../src/Sram.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576840381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = System.h;
+			path = ../src/System.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576850381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = bios.h;
+			path = ../src/bios.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576860381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Port.h;
+			path = ../src/Port.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576870381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = EEprom.h;
+			path = ../src/EEprom.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F545768A0381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Gfx.h;
+			path = ../src/Gfx.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F545768B0381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Util.h;
+			path = ../src/Util.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F545768D0381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = GBA.h;
+			path = ../src/GBA.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F545768F0381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Globals.h;
+			path = ../src/Globals.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576900381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = NLS.h;
+			path = ../src/NLS.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576910381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = AutoBuild.h;
+			path = ../src/AutoBuild.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576940381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = GBAinline.h;
+			path = ../src/GBAinline.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576950381E32C019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Sound.h;
+			path = ../src/Sound.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576960381E32C019FB90B = {
+			fileRef = F54576800381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576970381E32C019FB90B = {
+			fileRef = F54576810381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576980381E32C019FB90B = {
+			fileRef = F54576820381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576990381E32C019FB90B = {
+			fileRef = F54576830381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F545769A0381E32C019FB90B = {
+			fileRef = F54576840381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F545769B0381E32C019FB90B = {
+			fileRef = F54576850381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F545769C0381E32C019FB90B = {
+			fileRef = F54576860381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F545769D0381E32C019FB90B = {
+			fileRef = F54576870381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576A00381E32C019FB90B = {
+			fileRef = F545768A0381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576A10381E32C019FB90B = {
+			fileRef = F545768B0381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576A30381E32C019FB90B = {
+			fileRef = F545768D0381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576A50381E32C019FB90B = {
+			fileRef = F545768F0381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576A60381E32C019FB90B = {
+			fileRef = F54576900381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576A70381E32C019FB90B = {
+			fileRef = F54576910381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576AA0381E32C019FB90B = {
+			fileRef = F54576940381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576AB0381E32C019FB90B = {
+			fileRef = F54576950381E32C019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576AC0381E347019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = gbGlobals.cpp;
+			path = ../src/gb/gbGlobals.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576AD0381E347019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = gbMemory.cpp;
+			path = ../src/gb/gbMemory.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576AE0381E347019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = gbGfx.cpp;
+			path = ../src/gb/gbGfx.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576AF0381E347019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = gbCheats.cpp;
+			path = ../src/gb/gbCheats.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576B00381E347019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = gbPrinter.cpp;
+			path = ../src/gb/gbPrinter.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576B10381E347019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = GB.cpp;
+			path = ../src/gb/GB.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576B20381E347019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = gbSGB.cpp;
+			path = ../src/gb/gbSGB.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576B30381E347019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = gbSound.cpp;
+			path = ../src/gb/gbSound.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54576B40381E347019FB90B = {
+			fileRef = F54576AC0381E347019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576B50381E347019FB90B = {
+			fileRef = F54576AD0381E347019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576B60381E347019FB90B = {
+			fileRef = F54576AE0381E347019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576B70381E347019FB90B = {
+			fileRef = F54576AF0381E347019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576B80381E347019FB90B = {
+			fileRef = F54576B00381E347019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576B90381E347019FB90B = {
+			fileRef = F54576B10381E347019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576BA0381E347019FB90B = {
+			fileRef = F54576B20381E347019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F54576BB0381E347019FB90B = {
+			fileRef = F54576B30381E347019FB90B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F57080EF0381E872019FB90B = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = SDL.mm;
+			path = ../src/macosx/SDL.mm;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5DE472E0381A753019FB90B = {
+			children = (
+				F54576910381E32C019FB90B,
+				F54576810381E32C019FB90B,
+				F54576870381E32C019FB90B,
+				F54576820381E32C019FB90B,
+				A541A3D8041946DF00BFF2FE,
+				F545768D0381E32C019FB90B,
+				F54576940381E32C019FB90B,
+				F545768A0381E32C019FB90B,
+				F545768F0381E32C019FB90B,
+				F54576900381E32C019FB90B,
+				F54576860381E32C019FB90B,
+				F54576950381E32C019FB90B,
+				F54576830381E32C019FB90B,
+				F54576840381E32C019FB90B,
+				A5726D4B056EBC2E005B4801,
+				F545768B0381E32C019FB90B,
+				A5A221B90492372C00BFF2FE,
+				F54576850381E32C019FB90B,
+				A5917F5A05BCCF930069B24B,
+				A51C7E3904CF12E200A80002,
+				A5A221BA0492372C00BFF2FE,
+				F54576800381E32C019FB90B,
+			);
+			isa = PBXGroup;
+			name = Includes;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5DE47D00381ABEC019FB90B = {
+			children = (
+				F545765C0381E2F4019FB90B,
+				F545765B0381E2F4019FB90B,
+				F545764B0381E2F3019FB90B,
+				A541A3D60419465300BFF2FE,
+				F54576610381E2F4019FB90B,
+				F54576590381E2F4019FB90B,
+				F545764E0381E2F4019FB90B,
+				F54576570381E2F4019FB90B,
+				F54576560381E2F4019FB90B,
+				F54576580381E2F4019FB90B,
+				F54576510381E2F4019FB90B,
+				F54576640381E2F4019FB90B,
+				F545764C0381E2F3019FB90B,
+				A548597F0444CDCF00BFF2FE,
+				F57080EF0381E872019FB90B,
+				F54576520381E2F4019FB90B,
+				F545765F0381E2F4019FB90B,
+				A5726D49056EBC27005B4801,
+				F54576620381E2F4019FB90B,
+				A541A3D70419466400BFF2FE,
+				A54859820444CDD500BFF2FE,
+				A5C7527705BDE7AE00EEE9DE,
+				F54576630381E2F4019FB90B,
+				A5C7525605BDE4CF00EEE9DE,
+				A5C7526205BDE56700EEE9DE,
+				A5C7526305BDE56700EEE9DE,
+				A5C7526405BDE56700EEE9DE,
+				A5917F5505BCCF8A0069B24B,
+				A51C7E3604CF12C200A80002,
+				F545765E0381E2F4019FB90B,
+			);
+			isa = PBXGroup;
+			name = Sources;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		F5F08B47038DDA2D019E6289 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = MainClass.mm;
+			path = ../src/macosx/MainClass.mm;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		F5F08B48038DDA2D019E6289 = {
+			fileRef = F5F08B47038DDA2D019E6289;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA;
+}
