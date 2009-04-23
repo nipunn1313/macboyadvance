@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAA1091A0FA0BF5200BB992B /* SDL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAF3B9270F91B0DB00146F74 /* SDL.framework */; };
+		BAA109C10FA0CC8000BB992B /* libpng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA109C00FA0CC8000BB992B /* libpng.framework */; };
+		BAA109CC0FA0CD0300BB992B /* libpng.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAA109C00FA0CC8000BB992B /* libpng.framework */; };
 		BAF3B84D0F91ABDF00146F74 /* MainClass.h in Headers */ = {isa = PBXBuildFile; fileRef = F54576310381E28D019FB90B /* MainClass.h */; };
 		BAF3B84E0F91ABDF00146F74 /* openfile.h in Headers */ = {isa = PBXBuildFile; fileRef = F54576320381E28D019FB90B /* openfile.h */; };
 		BAF3B84F0F91ABDF00146F74 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = F54576800381E32C019FB90B /* unzip.h */; };
@@ -91,7 +94,6 @@
 		BAF3B8A10F91ABDF00146F74 /* expr-lex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAF3B8160F91AB7A00146F74 /* expr-lex.cpp */; };
 		BAF3B8A20F91ABDF00146F74 /* elf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAF3B8180F91AB8600146F74 /* elf.cpp */; };
 		BAF3B8A40F91ABDF00146F74 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		BAF3B8A50F91ABDF00146F74 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC481503D9DA31009EC4A4 /* libpng.a */; };
 		BAF3B9290F91B0DB00146F74 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF3B9270F91B0DB00146F74 /* SDL.framework */; };
 		BAF3B9440F91B34400146F74 /* debugger.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF3B9420F91B34400146F74 /* debugger.h */; };
 		BAF3B9470F91B35A00146F74 /* debugger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAF3B9450F91B35A00146F74 /* debugger.cpp */; };
@@ -125,12 +127,23 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		BAA109200FA0C07D00BB992B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAF3B8A70F91ABDF00146F74 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BAA109CC0FA0CD0300BB992B /* libpng.framework in CopyFiles */,
+				BAA1091A0FA0BF5200BB992B /* SDL.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,8 +173,8 @@
 		A5A221B90492372C00BFF2FE /* arm-new.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "arm-new.h"; path = "../src/arm-new.h"; sourceTree = SOURCE_ROOT; };
 		A5A221BA0492372C00BFF2FE /* thumb.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = thumb.h; path = ../src/thumb.h; sourceTree = SOURCE_ROOT; };
 		A5A9964C04212DA100BFF2FE /* KeyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyConfig.h; path = ../src/macosx/KeyConfig.h; sourceTree = SOURCE_ROOT; };
-		A5BC481503D9DA31009EC4A4 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
 		A5E1AEDE045054C700BFF2FE /* scanline.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = scanline.cpp; path = ../src/scanline.cpp; sourceTree = SOURCE_ROOT; };
+		BAA109C00FA0CC8000BB992B /* libpng.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libpng.framework; sourceTree = "<group>"; };
 		BAF3B80E0F91AB3D00146F74 /* Cheats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cheats.cpp; sourceTree = "<group>"; };
 		BAF3B8100F91AB5800146F74 /* armdis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = armdis.cpp; sourceTree = "<group>"; };
 		BAF3B8120F91AB6700146F74 /* exprNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exprNode.cpp; sourceTree = "<group>"; };
@@ -235,8 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAF3B8A40F91ABDF00146F74 /* Cocoa.framework in Frameworks */,
-				BAF3B8A50F91ABDF00146F74 /* libpng.a in Frameworks */,
 				BAF3B9290F91B0DB00146F74 /* SDL.framework in Frameworks */,
+				BAA109C10FA0CC8000BB992B /* libpng.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +272,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BAA109C00FA0CC8000BB992B /* libpng.framework */,
 				BAF3B9270F91B0DB00146F74 /* SDL.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
@@ -291,7 +305,6 @@
 			isa = PBXGroup;
 			children = (
 				A59B207604966ADE00BFF2FE /* Main.nib */,
-				A5BC481503D9DA31009EC4A4 /* libpng.a */,
 				F54576430381E2AA019FB90B /* Icons */,
 			);
 			name = Resources;
@@ -483,6 +496,7 @@
 				BAF3B8730F91ABDF00146F74 /* Sources */,
 				BAF3B8A30F91ABDF00146F74 /* Frameworks */,
 				BAF3B8A70F91ABDF00146F74 /* CopyFiles */,
+				BAA109200FA0C07D00BB992B /* CopyFiles */,
 			);
 			buildRules = (
 				BAF3B8AF0F91ABE000146F74 /* PBXBuildRule */,
@@ -627,9 +641,11 @@
 					/Users/g3/Library/Frameworks,
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\\\"$(SRCROOT)\\\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -661,7 +677,11 @@
 				INFOPLIST_FILE = "Info-Visual_Boy_Advance.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
-				LIBRARY_SEARCH_PATHS = ../macosx;
+				LIBRARY_SEARCH_PATHS = (
+					../macosx,
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				OTHER_CFLAGS = (
 					"-Wno-unused",
 					"-fomit-frame-pointer",
@@ -698,9 +718,11 @@
 					/Users/g3/Library/Frameworks,
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\\\"$(SRCROOT)\\\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)\"";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = "";
@@ -731,7 +753,11 @@
 				INFOPLIST_FILE = "Info-Visual_Boy_Advance.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
-				LIBRARY_SEARCH_PATHS = ../macosx;
+				LIBRARY_SEARCH_PATHS = (
+					../macosx,
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				OTHER_CFLAGS = (
 					"-Wno-unused",
 					"-fomit-frame-pointer",
@@ -767,10 +793,12 @@
 					/Users/g3/Library/Frameworks,
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\\\"$(HOME)/Library/Frameworks\\\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\\\"$(SRCROOT)\\\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -801,7 +829,11 @@
 				INFOPLIST_FILE = "Info-Visual_Boy_Advance.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
-				LIBRARY_SEARCH_PATHS = ../macosx;
+				LIBRARY_SEARCH_PATHS = (
+					../macosx,
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				OTHER_CFLAGS = (
 					"-Wno-unused",
 					"-fomit-frame-pointer",
