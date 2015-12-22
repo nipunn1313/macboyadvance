@@ -642,6 +642,7 @@
 		BAF3B8A90F91ABDF00146F74 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = ../macosx;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -703,6 +704,7 @@
 		BAF3B8AA0F91ABDF00146F74 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = ../macosx;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -763,6 +765,7 @@
 		BAF3B8AB0F91ABDF00146F74 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				FRAMEWORK_SEARCH_PATHS = ../macosx;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
