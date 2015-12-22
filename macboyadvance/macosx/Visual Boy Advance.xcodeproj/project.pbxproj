@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 44;
+	objectVersion = 42;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -643,12 +643,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(HOME)/Library/Frameworks",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
-				);
+				FRAMEWORK_SEARCH_PATHS = ../macosx;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -681,10 +676,6 @@
 				INFOPLIST_FILE = "Info-Visual_Boy_Advance.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
-				LIBRARY_SEARCH_PATHS = (
-					../macosx,
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-				);
 				OTHER_CFLAGS = (
 					"-Wno-unused",
 					"-fomit-frame-pointer",
@@ -713,18 +704,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(HOME)/Library/Frameworks",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
-					"$(HOME)/Library/Frameworks",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
-				);
+				FRAMEWORK_SEARCH_PATHS = ../macosx;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = "";
@@ -756,10 +736,6 @@
 				INFOPLIST_FILE = "Info-Visual_Boy_Advance.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
-				LIBRARY_SEARCH_PATHS = (
-					../macosx,
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-				);
 				OTHER_CFLAGS = (
 					"-Wno-unused",
 					"-fomit-frame-pointer",
@@ -787,12 +763,7 @@
 		BAF3B8AB0F91ABDF00146F74 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
-				);
+				FRAMEWORK_SEARCH_PATHS = ../macosx;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -823,10 +794,6 @@
 				INFOPLIST_FILE = "Info-Visual_Boy_Advance.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
-				LIBRARY_SEARCH_PATHS = (
-					../macosx,
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-				);
 				OTHER_CFLAGS = (
 					"-Wno-unused",
 					"-fomit-frame-pointer",
