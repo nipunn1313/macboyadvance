@@ -758,8 +758,8 @@ int main (int argc, char **argv)
         gArgv[i] = argv[i];
     gArgv[i] = NULL;
 
-    [SDLApplication poseAsClass:[NSApplication class]];
-    NSApplicationMain (argc, (const char**)argv);
+    [SDLApplication sharedApplication];
+    [NSApp run];
     return 0;
 }
 
