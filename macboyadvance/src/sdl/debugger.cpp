@@ -950,9 +950,9 @@ void debuggerBreakOnWrite(u32 *mem, u32 oldvalue, u32 value, int size)
 {
   u32 address = 0;
   if(mem >= (u32*)&workRAM[0] && mem <= (u32*)&workRAM[0x3ffff])
-    address = 0x2000000 + ((u32)mem - (u32)&workRAM[0]);
+    address = 0x2000000 + ((u32)(u64)mem - (u32)(u64)&workRAM[0]);
   else
-    address = 0x3000000 + ((u32)mem - (u32)&internalRAM[0]);
+    address = 0x3000000 + ((u32)(u64)mem - (u32)(u64)&internalRAM[0]);
 
   if(size == 2)
     printf("Breakpoint (on write) address %08x old:%08x new:%08x\n", 
