@@ -107,6 +107,7 @@
 			isEditable = 1;
 			outputFiles = (
 			);
+			script = "";
 		};
 		BAF3B8B00F91ABE000146F74 /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
@@ -115,6 +116,7 @@
 			isEditable = 1;
 			outputFiles = (
 			);
+			script = "";
 		};
 		BAF3B8B10F91ABE000146F74 /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
@@ -123,6 +125,7 @@
 			isEditable = 1;
 			outputFiles = (
 			);
+			script = "";
 		};
 /* End PBXBuildRule section */
 
@@ -516,9 +519,15 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = BAF3B8070F91AAEB00146F74 /* Build configuration list for PBXProject "Visual Boy Advance" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* VisualBoyAdvance */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -633,9 +642,7 @@
 		BAF3B8A90F91ABDF00146F74 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CC = "/usr/bin/gcc-4.0";
 				COPY_PHASE_STRIP = NO;
-				CPLUSPLUS = "/usr/bin/g++-4.0";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(HOME)/Library/Frameworks",
 					/Users/g3/Library/Frameworks,
@@ -686,7 +693,6 @@
 					"-Wno-unused",
 					"-fomit-frame-pointer",
 					"-ffast-math",
-					"-malign-natural",
 					"-fstrict-aliasing",
 					"-fsched-interblock",
 				);
@@ -710,9 +716,7 @@
 		BAF3B8AA0F91ABDF00146F74 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CC = "/usr/bin/gcc-4.0";
 				COPY_PHASE_STRIP = YES;
-				CPLUSPLUS = "/usr/bin/g++-4.0";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(HOME)/Library/Frameworks",
 					/Users/g3/Library/Frameworks,
@@ -762,7 +766,6 @@
 					"-Wno-unused",
 					"-fomit-frame-pointer",
 					"-ffast-math",
-					"-malign-natural",
 					"-fstrict-aliasing",
 					"-fsched-interblock",
 				);
@@ -786,8 +789,6 @@
 		BAF3B8AB0F91ABDF00146F74 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CC = "/usr/bin/gcc-3.3";
-				CPLUSPLUS = "/usr/bin/g++-3.3";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					/Users/g3/Library/Frameworks,
@@ -838,7 +839,6 @@
 					"-Wno-unused",
 					"-fomit-frame-pointer",
 					"-ffast-math",
-					"-malign-natural",
 					"-fstrict-aliasing",
 					"-fsched-interblock",
 				);
