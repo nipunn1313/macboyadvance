@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BAA1091A0FA0BF5200BB992B /* SDL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAF3B9270F91B0DB00146F74 /* SDL.framework */; };
 		BAA109C10FA0CC8000BB992B /* libpng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA109C00FA0CC8000BB992B /* libpng.framework */; };
 		BAA109CC0FA0CD0300BB992B /* libpng.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAA109C00FA0CC8000BB992B /* libpng.framework */; };
 		BAF3B84D0F91ABDF00146F74 /* MainClass.h in Headers */ = {isa = PBXBuildFile; fileRef = F54576310381E28D019FB90B /* MainClass.h */; };
@@ -94,9 +93,10 @@
 		BAF3B8A10F91ABDF00146F74 /* expr-lex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAF3B8160F91AB7A00146F74 /* expr-lex.cpp */; };
 		BAF3B8A20F91ABDF00146F74 /* elf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAF3B8180F91AB8600146F74 /* elf.cpp */; };
 		BAF3B8A40F91ABDF00146F74 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		BAF3B9290F91B0DB00146F74 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF3B9270F91B0DB00146F74 /* SDL.framework */; };
 		BAF3B9440F91B34400146F74 /* debugger.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF3B9420F91B34400146F74 /* debugger.h */; };
 		BAF3B9470F91B35A00146F74 /* debugger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAF3B9450F91B35A00146F74 /* debugger.cpp */; };
+		F09F19671C2A743E007A8617 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09F19641C2A73DC007A8617 /* SDL.framework */; };
+		F09F19681C2A743E007A8617 /* SDL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F09F19641C2A73DC007A8617 /* SDL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -145,8 +145,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F09F19681C2A743E007A8617 /* SDL.framework in CopyFiles */,
 				BAA109CC0FA0CD0300BB992B /* libpng.framework in CopyFiles */,
-				BAA1091A0FA0BF5200BB992B /* SDL.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +190,7 @@
 		BAF3B9270F91B0DB00146F74 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL.framework; sourceTree = "<group>"; };
 		BAF3B9420F91B34400146F74 /* debugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = debugger.h; path = ../src/sdl/debugger.h; sourceTree = SOURCE_ROOT; };
 		BAF3B9450F91B35A00146F74 /* debugger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = debugger.cpp; path = ../src/sdl/debugger.cpp; sourceTree = SOURCE_ROOT; };
+		F09F19641C2A73DC007A8617 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL.framework; sourceTree = "<group>"; };
 		F512304D03830368019FB90B /* motionblur.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = motionblur.cpp; path = ../src/motionblur.cpp; sourceTree = SOURCE_ROOT; };
 		F512304F03830368019FB90B /* simple2x.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = simple2x.cpp; path = ../src/simple2x.cpp; sourceTree = SOURCE_ROOT; };
 		F512305003830368019FB90B /* pixel.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = pixel.cpp; path = ../src/pixel.cpp; sourceTree = SOURCE_ROOT; };
@@ -250,8 +251,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09F19671C2A743E007A8617 /* SDL.framework in Frameworks */,
 				BAF3B8A40F91ABDF00146F74 /* Cocoa.framework in Frameworks */,
-				BAF3B9290F91B0DB00146F74 /* SDL.framework in Frameworks */,
 				BAA109C10FA0CC8000BB992B /* libpng.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +294,7 @@
 		29B97314FDCFA39411CA2CEA /* VisualBoyAdvance */ = {
 			isa = PBXGroup;
 			children = (
+				F09F19641C2A73DC007A8617 /* SDL.framework */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				F5DE472E0381A753019FB90B /* Includes */,
 				F5DE47D00381ABEC019FB90B /* Sources */,
@@ -644,12 +646,15 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = ../macosx;
+				FRAMEWORK_SEARCH_PATHS = (
+					../macosx,
+					"$(PROJECT_DIR)",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = "";
-				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"FINAL_VERSION=1",
 					"C_CORE=1",
@@ -677,6 +682,7 @@
 				INFOPLIST_FILE = "Info-Visual_Boy_Advance.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				OTHER_CFLAGS = (
 					"-Wno-unused",
 					"-fomit-frame-pointer",
@@ -706,7 +712,10 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = ../macosx;
+				FRAMEWORK_SEARCH_PATHS = (
+					../macosx,
+					"$(PROJECT_DIR)",
+				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = "";
@@ -738,6 +747,7 @@
 				INFOPLIST_FILE = "Info-Visual_Boy_Advance.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				OTHER_CFLAGS = (
 					"-Wno-unused",
 					"-fomit-frame-pointer",
@@ -766,7 +776,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				FRAMEWORK_SEARCH_PATHS = ../macosx;
+				FRAMEWORK_SEARCH_PATHS = (
+					../macosx,
+					"$(PROJECT_DIR)",
+				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -797,6 +810,7 @@
 				INFOPLIST_FILE = "Info-Visual_Boy_Advance.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				OTHER_CFLAGS = (
 					"-Wno-unused",
 					"-fomit-frame-pointer",
