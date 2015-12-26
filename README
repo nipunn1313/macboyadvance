@@ -9,6 +9,9 @@ you can always grab the source to build it yourself.
 
 Changelist
 ----------
+v1.0.1:
+- Compatible to 10.5
+
 v1.0.0:
 - OSX El Capitan Compatible
 - Enable 64k / 128k automatic flash detection
