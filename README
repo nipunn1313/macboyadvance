@@ -1,3 +1,17 @@
+Welcome to macboyadvance
+Forked from j4banus' work at http://sourceforge.net/projects/macboyadvance/
+which was forked from visualboyadvance
+
+Changelist
+----------
+v1.0.0:
+- El Capitan Compatible
+- Enable 64k / 128k automatic flash detection
+
+
+Here's the original README from VisualBoyAdvance
+------------------------------------------------
+
 Welcome to version 1.7.1 of VisualBoyAdvance-SDL. This is a GB/GBC/GBA
 emulator for Windows, Linux and BeOS.
 
