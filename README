@@ -1,6 +1,6 @@
 Welcome to macboyadvance
-Forked from j4banus' work at http://sourceforge.net/projects/macboyadvance/
-which was forked from visualboyadvance
+Forked from jban4us' work at http://sourceforge.net/projects/macboyadvance/
+which was forked from Visual Boy Advance
 
 Downloads
 ---------
@@ -10,7 +10,7 @@ you can always grab the source to build it yourself.
 Changelist
 ----------
 v1.0.0:
-- El Capitan Compatible
+- OSX El Capitan Compatible
 - Enable 64k / 128k automatic flash detection
 
 
