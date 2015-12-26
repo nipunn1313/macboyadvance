@@ -34,7 +34,6 @@ extern void soundSetQuality(int quality);
 
 static int    gArgc;
 static char  **gArgv;
-static BOOL   gFinderLaunch;
 int runAgain = 0, cheatCBA = 0, cheatGSA = 0;
 extern int stopPoll;
 int keyConfig[12], configArray[20];
@@ -268,24 +267,16 @@ bool changeType;
 /* Set the working directory to the .app's parent directory */
 - (void) setupWorkingDirectory:(BOOL)shouldChdir
 {
-    char parentdir[MAXPATHLEN];
-    char *c;
-    
-    strncpy ( parentdir, gArgv[0], sizeof(parentdir) );
-    c = (char*) parentdir;
-
-    while (*c != '\0')     /* go to end */
-        c++;
-    
-    while (*c != '/')      /* back up to parent */
-        c--;
-    
-    *c++ = '\0';             /* cut off last part (binary name) */
-  
     if (shouldChdir)
     {
-      assert ( chdir (parentdir) == 0 );   /* chdir to the binary app's parent */
-      assert ( chdir ("../../../") == 0 ); /* chdir to the .app's parent */
+        char parentdir[MAXPATHLEN];
+        CFURLRef url = CFBundleCopyBundleURL(CFBundleGetMainBundle());
+        CFURLRef url2 = CFURLCreateCopyDeletingLastPathComponent(0, url);
+        if (CFURLGetFileSystemRepresentation(url2, 1, (UInt8 *)parentdir, MAXPATHLEN)) {
+            chdir(parentdir);   /* chdir to the binary app's parent */
+        }
+        CFRelease(url);
+        CFRelease(url2);
     }
 }
 
@@ -338,7 +329,7 @@ bool changeType;
 
     /* Set the working directory to the .app's parent directory */
     //[self loadConfig];
-    [self setupWorkingDirectory:gFinderLaunch];
+    [self setupWorkingDirectory:true];
 
     /* Hand off to main application code */
     emu_main();
@@ -744,14 +735,7 @@ int main (int argc, char **argv)
 
     /* Copy the arguments into a global variable */
     int i;
-    /* This is passed if we are launched by double-clicking */
-    if ( argc >= 2 && strncmp (argv[1], "-psn", 4) == 0 ) {
-        gArgc = 1;
-	gFinderLaunch = YES;
-    } else {
-        gArgc = argc;
-	gFinderLaunch = NO;
-    }
+    gArgc = argc;
     gArgv = (char**) malloc (sizeof(*gArgv) * (gArgc+1));
     assert (gArgv != NULL);
     for (i = 0; i < gArgc; i++)
@@ -759,7 +743,7 @@ int main (int argc, char **argv)
     gArgv[i] = NULL;
 
     [SDLApplication sharedApplication];
-    NSApplicationMain (argc, (const char**)argv);
+    NSApplicationMain (gArgc, (const char**)argv);
     return 0;
 }
 
