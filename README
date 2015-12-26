@@ -9,6 +9,10 @@ you can always grab the source to build it yourself.
 
 Changelist
 ----------
+v1.0.2:
+- Set working directory automatically even without -psn argument since that
+  got deprecated.
+
 v1.0.1:
 - Compatible to 10.5
 
