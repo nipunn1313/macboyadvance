@@ -2,6 +2,11 @@ Welcome to macboyadvance
 Forked from j4banus' work at http://sourceforge.net/projects/macboyadvance/
 which was forked from visualboyadvance
 
+Downloads
+---------
+Check the Releases tab on github to download a prebuilt application. Otherwise
+you can always grab the source to build it yourself.
+
 Changelist
 ----------
 v1.0.0:
