@@ -3271,14 +3271,12 @@ void CPUReset()
     cpuFlashEnabled = false;
     cpuEEPROMEnabled = false;
     cpuEEPROMSensorEnabled = false;
-    cpuSaveGameFunc = sramWrite;
     break;
   case 3: // FLASH
     cpuSramEnabled = false;
     cpuFlashEnabled = true;
     cpuEEPROMEnabled = false;
     cpuEEPROMSensorEnabled = false;
-    cpuSaveGameFunc = flashWrite;
     break;
   case 4: // EEPROM+Sensor
     cpuSramEnabled = false;
